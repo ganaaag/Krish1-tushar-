@@ -1379,7 +1379,7 @@ OR Use /remove_chat
 
 🚀 **General Commands:**
 
-4. **/Bhandara** - 💡 Type this before sending your **📃.txt** file.
+4. **/ROHIT** - 💡 Type this before sending your **📃.txt** file.
 
 5. **/start** - 📛 Start the bot and receive a welcome message.
 
@@ -1476,7 +1476,7 @@ OWNER_TEXT = """
 
 🚀 **General Commands:**
 
-12. **/Shivam** - 💡 Type this before sending your **📃.txt** file.
+12. **/ROHIT** - 💡 Type this before sending your **📃.txt** file.
 
 13. **/start** - 📛 Start the bot and receive a welcome message.
 
