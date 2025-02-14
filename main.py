@@ -43,13 +43,13 @@ bot = Client("bot",
 # Get the MongoDB collection for this bot
 collection = get_collection(BOT_NAME, MONGO_URI)
 # Constants
-OWNER_IDS = [6126688051]  # Replace with the actual owner user IDs
+OWNER_IDS = [5840594311]  # Replace with the actual owner user IDs
 
 cookies_file_path ="modules/cookies.txt"
 # Global variables
-log_channel_id = [-1002335220633]
-authorized_users = [6243077977,6126688051,6960427846,7245267588]
-ALLOWED_CHANNEL_IDS = [-1002335220633]
+log_channel_id = [-1002323970081]
+authorized_users = [5840594311,7856557198]
+ALLOWED_CHANNEL_IDS = [-1002323970081]
 my_name = "❤️"
 overlay = None 
 accept_logs = 0
@@ -111,7 +111,7 @@ async def add_log_channel(client: Client, message: Message):
     try:
         new_log_channel_id = int(message.text.split(maxsplit=1)[1])
         log_channel_id = new_log_channel_id
-        save_log_channel_id(collection, -1002335220633)
+        save_log_channel_id(collection, -1002323970081)
         await message.reply(f"Log channel ID updated to {new_log_channel_id}.")
     except (IndexError, ValueError):
         await message.reply("Please provide a valid channel ID.")
@@ -937,7 +937,7 @@ async def process_file(bot, m, links, b_name, count, end_count, raw_text2, res, 
                 'CR': CR,
                 'raw_text4': raw_text4,
                 'thumb': thumb,
-                'log_channel_id': -1002155787742,
+                'log_channel_id': -1002323970081,
                 'my_name': my_name,
                 'overlay': overlay,
                 'accept_logs': accept_logs
@@ -1347,7 +1347,7 @@ async def process_links(bot, m, links, b_name, count, end_count, raw_text2, res,
     start_time = None
     await m.reply_text(f"{end_message}")
     if accept_logs == 1:
-        await bot.send_message(-1002311248665, f"{end_message}")
+        await bot.send_message(-1002323970081, f"{end_message}")
     await m.reply_text("DONE✅")
 
 
