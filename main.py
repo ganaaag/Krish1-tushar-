@@ -33,7 +33,7 @@ from PIL import Image
 from pytube import Playlist  #Youtube Playlist Extractor
 from yt_dlp import YoutubeDL
 import yt_dlp as youtube_dl
-
+from config import authorized_users
 # Initialize bot
 bot = Client("bot",
              bot_token=BOT_TOKEN,
